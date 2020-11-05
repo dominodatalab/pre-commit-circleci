@@ -19,7 +19,7 @@ Add the following to your `.pre-commit-config.yaml`:
 
 ```yaml
 - repo: https://github.com/dominodatalab/pre-commit-circleci
-  rev: main
+  rev: v0.0.1
   hooks:
     - id: circleci-validate
     - id: circleci-pack
