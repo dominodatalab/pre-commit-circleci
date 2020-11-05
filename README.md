@@ -18,7 +18,7 @@ There are two hooks for operating on the CircleCI configuration:
 Add the following to your `.pre-commit-config.yaml`:
 
 ```yaml
-- repo: git://github.com/dominodatalab/pre-commit-circleci
+- repo: https://github.com/dominodatalab/pre-commit-circleci
   rev: main
   hooks:
     - id: circleci-validate
