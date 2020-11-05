@@ -3,11 +3,11 @@
   description: Validates that your CircleCI configuration is well-formed.
   entry: hooks/circleci-validate.sh
   language: script
-  types: [shell]
+  files: '^\.circleci/config.yml$'
 
 - id: circleci-pack
   name: Pack a CircleCI configuration
   description: Creates a CircleCI configuration from separate template files stored in .circleci/template/
   entry: hooks/circleci-pack.sh
   language: script
-  types: [shell]
+  files: '^\.circleci/template/.*$'
