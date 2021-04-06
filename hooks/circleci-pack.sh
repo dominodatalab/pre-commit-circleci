@@ -7,5 +7,7 @@ if ! command -v circleci > /dev/null 2>&1; then
   exit 1
 fi
 
-circleci config pack .circleci/template > .circleci/config.yml
-git add .circleci/config.yml
+config_path="${1:-.circleci/config.yml}"
+
+circleci config pack .circleci/template > "$config_path"
+git add "$config_path"
