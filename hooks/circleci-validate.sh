@@ -7,4 +7,4 @@ if ! command -v circleci > /dev/null 2>&1; then
   exit 1
 fi
 
-circleci config validate
+circleci config validate "$@"
