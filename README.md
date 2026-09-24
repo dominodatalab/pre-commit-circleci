@@ -6,7 +6,7 @@ Pre-commit hooks for CircleCI config validation and creation based around the [c
 
 `pre-commit-circleci` requires:
 
-* [circleci-cli](https://github.com/CircleCI-Public/circleci-cli#getting-started)
+* [circleci-cli](https://cli.circleci.com/reference/#installation)
 
 ### Install
 
@@ -19,7 +19,7 @@ Add the following to your `.pre-commit-config.yaml`:
 
 ```yaml
 - repo: https://github.com/dominodatalab/pre-commit-circleci
-  rev: v0.0.2
+  rev: v0.0.4
   hooks:
     - id: circleci-validate
     - id: circleci-pack
