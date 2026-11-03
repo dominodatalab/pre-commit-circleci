@@ -25,6 +25,14 @@ Add the following to your `.pre-commit-config.yaml`:
     - id: circleci-pack
 ```
 
+### CLI versions
+
+Both the legacy CLI (0.1.x) and CLI 1.x are supported. `circleci-validate` checks that you are logged in first:
+it uses `circleci diagnostic` on the legacy CLI and `circleci auth me` on 1.x.
+
+Extra `args` are passed straight to `circleci config validate`, so they must match your CLI version.
+For example, the organization flag is `--org-slug github/myorg` on the legacy CLI and `--org gh/myorg` on 1.x.
+
 ### Contributing
 
 Contributions are welcome! Please feel free to create a pull request or issue and we'll make sure to take a look.
